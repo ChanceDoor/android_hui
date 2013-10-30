@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <tilent.paomahui.view.TitleView
+        android:id="@+id/mtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+   <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gradient" >
+
+        <RelativeLayout
+            android:id="@+id/previous"
+            android:layout_width="40dip"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/img_arrow_left" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/next"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/img_arrow_right" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+	<LinearLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:background="@drawable/gradient">
+            <TextView 
+                android:id="@+id/sunday"
+                style="@style/head_days"
+                android:text="@string/sunday"/>
+            <TextView 
+                android:id="@+id/monday"
+                style="@style/head_days"
+                android:text="@string/monday"/>
+            <TextView 
+                android:id="@+id/tuesday"
+                style="@style/head_days"
+                android:text="@string/tuesday"/>
+            <TextView 
+                android:id="@+id/wednesday"
+                style="@style/head_days"
+                android:text="@string/wednesday"/>
+            <TextView 
+                android:id="@+id/thursday"
+                style="@style/head_days"
+                android:text="@string/thursday"/>
+            <TextView 
+                android:id="@+id/friday"
+                style="@style/head_days"
+                android:text="@string/friday"/>
+            <TextView 
+                android:id="@+id/saturday"
+                style="@style/head_days"
+                android:text="@string/saturday"/>
+        </LinearLayout>
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="7"
+        android:background="@color/grey"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:stretchMode="columnWidth" />
+</LinearLayout>

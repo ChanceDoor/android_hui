@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="title_activity_sign_up">注册</string>
+
+    <!-- Strings related to login -->
+    <string name="TVemail_text_sign_up">＊账号：</string>
+    <string name="TVpswd_text_sign_up">＊密码：</string>
+    <string name="TVpswd_text_confirm">＊确认密码：</string>
+    <string name="TVjob_text">职业：</string>
+    <string name="TVage_text">年龄：</string>
+    <string name="TVgender_text">性别：</string>
+    <string name="TVlocation_text">常住地：</string>
+    <string name="TVphone_text">手机：</string>
+    <string name="TVqq_text">QQ：</string>
+    <string name="TVnickname_text">*昵称：</string>
+    <string name="prompt_nickname">将作为您在社区中的身份识别</string>
+    <string name="action_commit_register">注册</string>
+    <string name="prompt_email_sign_up">您的邮箱</string>
+    <string name="prompt_password_sign_up">8～32位字符</string>
+    <string name="prompt_password_confirm">请再输一遍密码</string>
+    <string name="action_sign_up">注册</string>
+    <string name="sign_up_progress_signing_up">注册中&#8230;</string>
+    <string name="error_password_confirm">两次输入密码不同</string>
+    <string name="error_invalid_nickname">昵称中不能包含空格</string>
+    <string name="error_invalid_qq">请输入正确的QQ号</string>
+    <string name="error_invalid_phone">请输入正确的手机号</string>
+    <string name="error_invalid_age">请输入正确的年龄</string>
+    
+
+</resources>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical" 
+    tools:context=".ConfShowActivity" >
+
+    <tilent.paomahui.view.TitleView
+        android:id="@+id/conf_show_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:scrollbars="vertical"
+android:fadingEdge="vertical"
+>
+<LinearLayout 
+    android:id="@+id/show_conf_layout"
+android:orientation="vertical" 
+android:layout_width="fill_parent"
+android:layout_height="wrap_content" 
+android:padding="10dip"
+android:scrollbars="vertical"
+>
+    <TextView
+        android:id="@+id/text_title"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+   <ImageView
+    android:id="@+id/conf_image" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:scaleType="centerInside" 
+    android:padding="2dp"
+    >
+   </ImageView> 
+    
+    <ProgressBar 
+     android:id="@+id/conf_progress" 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:layout_gravity="center">
+  </ProgressBar> 
+
+    <TextView
+        android:id="@+id/text_body"
+        android:textColor="@color/black"
+        android:maxLines = "100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</ScrollView>
+    
+
+</LinearLayout>

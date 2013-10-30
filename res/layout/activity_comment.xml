@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CommentActivity" >
+
+    <tilent.paomahui.view.TitleView
+        android:id="@+id/conf_show_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+   
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="350"
+        android:lines="5"
+        android:hint="说点什么吧" />
+    <ScrollView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:scrollbars="vertical"
+android:fadingEdge="vertical"
+>
+<LinearLayout 
+    android:id="@+id/show_conf_layout"
+android:orientation="vertical" 
+android:layout_width="match_parent"
+android:layout_height="wrap_content" 
+android:padding="10dip"
+android:scrollbars="vertical"
+>
+        <Button 
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:text="评论"
+        android:background="@drawable/gradient_grey"
+        android:onClick="showUnableMsg"/>
+        
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent" 
+                android:layout_weight="3"
+                android:gravity="center"
+                android:background="@color/grey"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="小冰冰"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="4dp"
+                android:layout_weight="7"
+                android:minHeight="50dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:text="这个消息真是太让人意外了！得赶快告诉同事！"/>
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="4dp"
+                android:background="@color/grey"
+                android:orientation="vertical">
+                <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="@color/red"
+                android:layout_gravity="center"
+                android:text="赞"/>
+                <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="@color/blue"
+                android:layout_gravity="center"
+                android:text="回复"/>
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent" 
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:textSize="16sp"
+                android:text="张家怡"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="4dp"
+                android:layout_weight="7"
+                android:background="@color/grey"
+                android:textColor="@color/black"
+                android:minHeight="50dp"
+                android:text="mark 正好有用"/>
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="4dp"
+                android:background="@color/grey"
+                android:orientation="vertical">
+                <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="@color/red"
+                android:layout_gravity="center"
+                android:text="赞"/>
+                <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="@color/blue"
+                android:layout_gravity="center"
+                android:text="回复"/>
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent" 
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:textSize="16sp"
+                android:text="王桑"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="4dp"
+                android:layout_weight="7"
+                android:minHeight="20dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:text="为什么每次都可以在这里找到最新的消息？小编也太神通广大了吧！"/>
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginLeft="4dp"
+                android:background="@color/grey"
+                android:orientation="vertical">
+                <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="@color/red"
+                android:layout_gravity="center"
+                android:text="赞"/>
+                <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="@color/blue"
+                android:layout_gravity="center"
+                android:text="回复"/>
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

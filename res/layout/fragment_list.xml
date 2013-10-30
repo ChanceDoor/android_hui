@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/list_bg">
+    
+    <tilent.paomahui.view.TitleView
+        android:id="@+id/mtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button 
+            style="@style/ListBtn"
+            android:text="工作机会"/>
+        <Button 
+            style="@style/ListBtn"
+            android:text="我来挖人"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button 
+            style="@style/ListBtn"
+            android:text="赏金任务"/>
+        <Button 
+            style="@style/ListBtn"
+            android:text="赏金猎人"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button 
+            style="@style/ListBtn"
+            android:text="组织活动"/>
+        <Button 
+            style="@style/ListBtn"
+            android:text="参加活动"/>
+    </LinearLayout>
+</LinearLayout>
